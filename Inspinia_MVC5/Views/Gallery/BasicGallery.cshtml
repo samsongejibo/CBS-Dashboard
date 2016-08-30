@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = " CBS Gallery";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>@ViewBag.Title</h2>
+        
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">                     
+
+                    <div class="lightBoxGallery">
+                        <a href="~/Images/gallery/13.jpg" title="CBS Pictures" data-gallery=""><img src="~/Images/gallery/13s.jpg"></a>
+                        <a href="~/Images/gallery/14.jpg" title="CBS Pictures" data-gallery=""><img src="~/Images/gallery/14s.jpg"></a>
+                        <a href="~/Images/gallery/15.jpg" title="CBS Pictures" data-gallery=""><img src="~/Images/gallery/15s.jpg"></a>
+                        <a href="~/Images/gallery/16.jpg" title="CBS Pictures" data-gallery=""><img src="~/Images/gallery/16s.jpg"></a>                     
+                        
+
+                        <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+                        <div id="blueimp-gallery" class="blueimp-gallery">
+                            <div class="slides"></div>
+                            <h3 class="title"></h3>
+                            <a class="prev">‹</a>
+                            <a class="next">›</a>
+                            <a class="close">×</a>
+                            <a class="play-pause"></a>
+                            <ol class="indicator"></ol>
+                        </div>
+
+                  
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    /* Local style for demo purpose */
+
+    .lightBoxGallery {
+        text-align: center;
+    }
+
+        .lightBoxGallery img {
+            margin: 5px;
+        }
+</style>
+
+
+
+@section Styles {
+    @Styles.Render("~/Content/plugins/blueimp/css/")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/lightboxGallery")
+
+}

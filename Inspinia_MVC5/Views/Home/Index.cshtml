@@ -1,0 +1,408 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Landing page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>CBS | @ViewBag.Title</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Add jQuery Style direct - used for jQGrid plugin -->
+    <link href="@Url.Content("~/Scripts/plugins/jquery-ui/jquery-ui.css")" rel="stylesheet" type="text/css" />
+
+    <!-- Primary Inspinia style -->
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/font-awesome/css")
+
+</head>
+
+<body id="page-top" class="landing-page">
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="">
+
+                        <a class="inline" href="#page-top">
+                            <img src="~/Content/landing/Logo_NRC_MRC.png" alt="dashboard" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                       @* <li><a class="page-scroll" href="#features">Overview</a></li>
+                        <li><a class="page-scroll" href="#projectstatus">Project Status</a></li>
+                        <li><a class="page-scroll" href="#projectprinciples">Principles</a></li>
+                        <li><a class="page-scroll" href="#partners">Partners</a></li>*@
+
+                        <li><a class="page-scroll" href="#features">Overview</a></li>
+                        <li><a class="page-scroll" href="#projectstatus">Project Status</a></li>
+                        <li><a class="page-scroll" href="#projectprinciples">Principles</a></li>
+                        <li><a class="page-scroll" href="#partners">Partners</a></li>
+
+                        <li><a class="btn btn-info" href="@Url.Action("Overview", "Dashboards")">Login</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>
+                            Red Cross<br />
+                            Community Based Surveillance 
+                        </h1>
+                        
+                    </div>
+                    <div class="carousel-image wow zoomIn">
+                    </div>
+                </div>
+                <!-- Set background for slide in css -->
+                <div class="header-back one"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <section id="features" class="container services">
+        <div class="row">
+            <div class="wow fadeInRight">
+                <h2>Project Information</h2>
+
+                <h5>What is community based surveillance</h5>
+                <p>
+                    Community based surveillance (CBS) is the organized and rapid capture of information from the community
+                    about events that are a potential risk to public health. Community based surveillance is a demonstrated tool
+                    that has been employed in previous infectious disease outbreaks in a variety of settings. Community based
+                    surveillance has been identified as a surveillance tool that has potential to improve early case detection
+                    of infectious diseases such as plague, diarrheal diseases and malaria, and reduce transmission in the
+                    community by enabling early response efforts in Madagascar.
+                </p>
+                <h5>Project info – reporting indicators and community case definitions.</h5>
+                @*<ul>Site Name 1</ul>
+    <ul>Site Name 2</ul>
+
+    <h5>Population Size: </h5>
+    <h5>Number of Red Cross Volunteers: </h5>*@
+
+            </div>
+
+           @* <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-3 text-left wow fadeInRight">
+        <h2>Project Map View</h2>
+
+        <div>
+            <center><img src="~/Content/landing/madagascar-Amoroni_Mania_Region.png" alt="dashboard" class="img-responsive"></center>
+
+        </div>
+    </div>*@
+
+        </div>
+    </section>
+
+    <section id="projectstatus" class="timeline gray-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">       
+                    
+                    <iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiZjVjYzIwMWItZmVlNS00NzEyLThlOTAtNzEzM2EwNGY5ZWU5IiwidCI6ImQzNGRmNDllLThmZjQtNDZkNi1iNzhkLTNjZWYzMjYxYmNkNiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiNDQ4ZmQ5MTEtYjYzYi00NTlhLTliNjEtZmNhZTI4NGIxMTA4IiwidCI6ImQzNGRmNDllLThmZjQtNDZkNi1iNzhkLTNjZWYzMjYxYmNkNiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projectprinciples" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Project Principless</h1>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 features-text">
+                    <small>CBS</small>
+                    <h2>Real time SMS reporting </h2>
+                    <i class="fa fa-bar-chart big-icon pull-right"></i>
+                    <p>(text to come)</p>
+                </div>
+                <div class="col-lg-5 features-text">
+                    <small>CBS</small>
+                    <h2>Alerts</h2>
+                    <i class="fa fa-bolt big-icon pull-right"></i>
+                    <p>(Text to come) CSB and collaboration with local authorities.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 features-text">
+                    <small>CBS</small>
+                    <h2>Real time analysis  and data sharing</h2>
+                    <i class="fa fa-bar-chart big-icon pull-right"></i>
+                    <p>(text to come)</p>
+                </div>
+                <div class="col-lg-5 features-text">
+                    <small>CBS</small>
+                    <h2>Confidentiality and privacy policy</h2>
+                    <i class="fa fa-users big-icon pull-right"></i>
+                    <p>(text to come) No personal info, secure, etc.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="partners" class="gray-section team">
+        <div class="container">
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Partners</h1>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 wow fadeInLeft">
+                    <div class="team-member">
+                        <img src="~/Content/landing/Logo_MRC.png" class="img-responsive img-small" alt="MRC">
+                        <h4><span class="navy">Malagasy</span> Red Cross (MRC)</h4>
+                       
+                        @*<ul class="list-inline social-icon">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul>*@
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member wow zoomIn">
+                        <img src=""  class="img-responsive" alt="MoH">
+                        <h4><span class="navy">Minstry</span> of Health (MoH)</h4>
+                       
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4 wow fadeInRight">
+                    <div class="team-member">
+                        <img src="~/Content/landing/Logo_Danish_RedCross.jpg" class="img-responsive" alt="DRC">
+                        <h4><span class="navy">Danish</span> Red Cross</h4>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    @*<section id="reports" class="pricing">
+       
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-left">
+                    <div class="navy-line"></div>
+                    <h1>Reports</h1>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-10">
+
+                   
+                        <button type="button" class="btn-sm btn-primary">
+                            <span class="glyphicon glyphicon glyphicon-download-alt"></span> Weekly Report
+                        </button>
+                    
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-10">
+                    
+                        <button type="button" class="btn-sm btn-primary">
+                            <span class="glyphicon glyphicon glyphicon-download-alt"></span> Monthly Report
+                        </button>
+                    
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-10">
+                    
+                        <button type="button" class="btn-sm btn-primary">
+                            <span class="glyphicon glyphicon glyphicon-download-alt"></span> Annaul Report
+                        </button>
+                   
+                </div>
+
+
+                @*<ul class="pricing-plan list-unstyled">
+                        <li class="pricing-title">
+                            Download
+                        </li>
+
+
+
+                        <li>
+                            Weekly Report
+                        </li>
+                        <li>
+                            Monthly Report
+                        </li>
+                        <li>
+                            Annual Reports
+                        </li>
+
+                    </ul>
+
+            </div>
+    
+
+    </section>*@
+
+
+
+
+
+    <section id="contact" class="gray-section contact">
+        <div class="container">
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Contact Us</h1>
+                    
+                </div>
+            </div>
+            <div class="row m-b-lg">
+                <div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3">
+                    <address>
+                        <strong><span class="navy">Norwegian Red Cross</span></strong><br />
+                        Hausmans gate 7, 600<br />
+                        Oslo, Norway<br />
+                        <abbr title="Phone">P:</abbr> (123) 456-7890<br />
+                        Web: <a href="https://www.rodekors.no/red-cross-in-english/">Norwegian Red Cross</a>
+                    </address>
+                </div>
+                <div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-1">
+                    <address>
+                        <strong><span class="navy">Malagasy Red Cross</span></strong><br />
+                        Address<br />
+                        Madagascar<br />
+                        <abbr title="Phone">P:</abbr> ####<br />
+                        Web: <a href="#">Malagasy Red Cross</a>
+                    </address>
+                </div>
+            </div>
+           @* <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="mailto:test@email.com" class="btn btn-primary">Send us mail</a>
+                   
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.rodekors.no/red-cross-in-english/">Norwegian Red Cross</a>
+                        </li>
+                        <li>
+                            <a href="#">Malagasy Red Cross</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>*@
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                    <p>
+                        <strong>© 2016&nbsp;Copyright</strong><br />
+                        <center><img src="~/Content/landing/transparentnorcrosslogo.png" alt="dashboard" class="img-responsive"></center>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for main scripts render -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/plugins/slimScroll")
+    @Scripts.Render("~/bundles/inspinia")
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('body').scrollspy({
+                target: '.navbar-fixed-top',
+                offset: 80
+            });
+
+            // Page scrolling feature
+            $('a.page-scroll').bind('click', function (event) {
+                var link = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(link.attr('href')).offset().top - 50
+                }, 500);
+                event.preventDefault();
+                $('#navbar').collapse('hide');
+            });
+        });
+
+        var cbpAnimatedHeader = (function () {
+            var docElem = document.documentElement,
+                    header = document.querySelector('.navbar-default'),
+                    didScroll = false,
+                    changeHeaderOn = 200;
+            function init() {
+                window.addEventListener('scroll', function (event) {
+                    if (!didScroll) {
+                        didScroll = true;
+                        setTimeout(scrollPage, 250);
+                    }
+                }, false);
+            }
+            function scrollPage() {
+                var sy = scrollY();
+                if (sy >= changeHeaderOn) {
+                    $(header).addClass('navbar-scroll')
+                }
+                else {
+                    $(header).removeClass('navbar-scroll')
+                }
+                didScroll = false;
+            }
+            function scrollY() {
+                return window.pageYOffset || docElem.scrollTop;
+            }
+            init();
+
+        })();
+
+    </script>
+
+</body>
+</html>
