@@ -12,7 +12,6 @@ using Microsoft.Owin.Security;
 using Inspinia_MVC5.Models;
 
 
-
 namespace Inspinia_MVC5.Controllers
 {
     [Authorize]
