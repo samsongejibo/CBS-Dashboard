@@ -138,7 +138,7 @@ namespace Inspinia_MVC5.Controllers
 
         //
         // GET: /Account/Register
-        [AllowAnonymous]
+        [Authorize]
         public ActionResult Register()
         {
             return View();
@@ -451,7 +451,7 @@ namespace Inspinia_MVC5.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Dashboard_1", "Dashboards");
+            return RedirectToAction("Overview", "Dashboards");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult

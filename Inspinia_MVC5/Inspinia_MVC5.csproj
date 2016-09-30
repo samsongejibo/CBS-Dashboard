@@ -172,7 +172,6 @@
   <ItemGroup>
     <Folder Include="App_Data\uploads\" />
     <Folder Include="Views\Landing\" />
-    <Folder Include="Views\Smssync\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -418,6 +417,8 @@
     <Content Include="Images\gallery\15s.jpg" />
     <Content Include="Images\gallery\16.jpg" />
     <Content Include="Images\gallery\16s.jpg" />
+    <Content Include="Images\gallery\CRM.png" />
+    <Content Include="Images\gallery\CRM_s.png" />
     <Content Include="Images\landing\danishredcrosslogo.png" />
     <Content Include="Images\landing\madagsyrclogo.jpg" />
     <Content Include="Images\rode_kors_logo.jpg" />
@@ -427,6 +428,7 @@
     <Content Include="locales\es.json" />
     <None Include="Properties\PublishProfiles\2.pubxml" />
     <None Include="Properties\PublishProfiles\cbsmadagascar.pubxml" />
+    <None Include="Properties\PublishProfiles\cbsmrc.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Images\a1.jpg" />
     <Content Include="Images\a2.jpg" />
@@ -1714,7 +1716,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Dashboards\Dashboard_1.cshtml" />
@@ -1874,6 +1878,7 @@
     <Content Include="Views\Dashboards\DiarrhoealDiseases.cshtml" />
     <Content Include="Views\Dashboards\CommunityDeaths.cshtml" />
     <Content Include="Views\Dashboards\AnimalDieOffs.cshtml" />
+    <Content Include="Views\Smssync\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\LandingPage.fr.resx">
@@ -1889,6 +1894,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
